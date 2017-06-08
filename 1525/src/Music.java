@@ -19,4 +19,31 @@ public class Music {
 		this.status=false;
 		System.out.println("music is off");
 	}
+	void volumeup()
+	{
+		if(this.status==true)
+		{
+		this.volume=this.volume+1;
+		System.out.println("volume is"+this.volume);
+		}
+		else
+		{
+			System.out.println("music is off" );
+		}
+	}
+	void volumedown()
+	{
+		if(this.status==true)
+		{
+		this.volume=this.volume-1;
+		System.out.println("volume is"+this.volume);
+		}
+		
+		else
+		{
+			System.out.println("music is off" );
+		}
+		
+		
+		}
 }

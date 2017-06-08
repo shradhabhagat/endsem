@@ -24,12 +24,24 @@ public class test {
 	public void tearDown() throws Exception {
 	}
 
-	@Test
-	public boolean testacon() {
-		System.out.println("ac is on");
-      assertEquals(true, testacon());
-	}
+
+	public class Testactemp {
+
+		
+		///   Ac temp = new Ac(true, 23);
+		   
+		  // @Test
+		  // public int testtemp() {	
+
+			//   Ac temp = new Ac(true, 23);
+			//   Ac output=this.testtemp();
+		     // assertEquals(24, increasetemp());     
+		   }
+
+		
+
+		}
 
 	
 
-}
+//}

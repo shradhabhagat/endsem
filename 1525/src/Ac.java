@@ -5,26 +5,43 @@ public class Ac {
 	private boolean status;
 
 	public Ac(boolean b, int i) {
-		
+		// TODO Auto-generated constructor stub
 		this.status=b;
 		this.temprature=i;
 	}
-	public boolean acon()
+	void acon()
 	{
 		this.status=true;
-		return status;
+		System.out.println("ac is on");
 	}
 	void acoff()
 	{
 		this.status=false;
 		System.out.println("ac is off");
 	}
-	public int increasetemp(){
-		int count=0;
-		for(int i=0;i<30;i++){
-			count++;
+	void tempratureup()
+	{
+		if(this.status==true)
+		{
+		this.temprature=this.temprature+1;
+		System.out.println("channel is"+this.temprature);
 		}
-		return count;
-		
+		else
+		{
+			System.out.println("ac is off" );
+		}
+	}
+
+	void tempraturedown()
+	{
+		if(this.status==true)
+		{
+		this.temprature=this.temprature-1;
+		System.out.println("channel is"+this.temprature);
+		}
+		else
+		{
+			System.out.println("ac is off" );
+		}
 	}
 }
